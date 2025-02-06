@@ -1,0 +1,59 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Pause.",
+	"text": {
+		"plugins": {
+			"rex_pause": {
+				"name": "Pause",
+				"description": "Pause timescale",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_pause.html",
+				"properties": {
+				},
+				"aceCategories": {
+					"pause/resume": "Pause/Resume",
+					"event": "Event",
+					"if": "If",
+					"timescale": "Timescale"
+				},
+				"conditions": {
+					"onpause0": {
+						"list-name": "On pause",
+						"display-text": "On pause",
+						"description": "Trigger when game is pausing"
+						},
+					"onresume1": {
+						"list-name": "On resume",
+						"display-text": "On resume",
+						"description": "Trigger when game is resuming"
+						},
+					"ispause2": {
+						"list-name": "Is pause",
+						"display-text": "Is pause",
+						"description": "Return true if it is in pause state."
+						}
+				},
+				"actions": {
+					"tooglepause0": {
+						"list-name": "Toggle pause",
+						"display-text": "Toggle pause",
+						"description": "Toggle pause."
+					},
+					"setstate1": {
+						"list-name": "Set pause state",
+						"display-text": "Set pause state to [i]{0}[/i]",
+						"description": "Set the puase state.",
+						"params": {
+							"state2": { "name":"State", "desc":"Set puase state to.", "items":{"pause":"Pause","run":"Run"}}
+						}
+					}
+				},
+				"expressions": {
+					"pretimescale0": {
+						"description": "Get previous timescale.",
+						"translated-name": "PreTimescale"
+						}
+				}
+			}
+		}
+	}
+}

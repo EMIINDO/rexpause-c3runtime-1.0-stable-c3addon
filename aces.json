@@ -1,0 +1,77 @@
+{
+	"pause/resume": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "tooglepause0",
+				"scriptName": "TooglePause",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "setstate1",
+				"scriptName": "SetState",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["pause","run"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"event": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "onpause0",
+				"scriptName": "OnPause",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "onresume1",
+				"scriptName": "OnResume",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"if": {
+		"conditions": [
+			{
+				"c2id": 2,
+				"id": "ispause2",
+				"scriptName": "IsPause",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"timescale": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "pretimescale0",
+				"expressionName": "PreTimescale",
+				"scriptName": "PreTimescale",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}
